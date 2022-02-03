@@ -165,12 +165,18 @@ int main() {
         lost = GenRandom(n);         // 중복 없이 체육복 잃어버린 학생
         reserve = GenRandom(n);       // 중복 없이 체육복 여분있는 학생
 
+        auto start = std::chrono::steady_clock::now();
+        
         sort(lost.begin(), lost.end());          // 번호 순대로 정렬
         sort(reserve.begin(), reserve.end());
         
         cout << endl;
         int result = solution(n, lost, reserve);
         cout << "result: " << result << '\n';
+        
+        auto end = std::chrono::steady_clock::now();
+        std::chrono::duration<double> elapsed_seconds = end-start;
+        std::cout << "elapsed time: " << elapsed_seconds.count() << "s\n";   // solution 함수  실행 시간
         cout << endl << endl << endl;
     }
 
