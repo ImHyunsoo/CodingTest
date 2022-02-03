@@ -1,102 +1,55 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-# # Ã¼À°º¹
 import random
-
-
+import copy
+import time
 
 n = random.randint(2, 30)
 k = random.randint(1, n)
 m = random.randint(1, n)
-lost = random.sample(range(1, n+1), k)
+lost = random.sample(range(1, n+1), k)       # ì¤‘ë³µì—†ì´,  1 ~ n  ì¤‘ì—ì„œ  ëœë¤í•œ ìˆ˜ kê°œë¥¼ ë½‘ìŒ
 reserve = random.sample(range(1, n+1), m)
+print("í•™ìƒ ëœë¤")
 print(n)
 print(lost, k)
 print(reserve, m)
 print()
 
-########################################################################
-# lost_set = set(lost) - set(lost).intersection(set(reserve))
-# reserve_set = set(reserve) - set(lost).intersection(set(reserve))
-# print(lost_set)
-# print(reserve_set)
-# for i in list(reserve_set):
-#     if int(i)-1 in lost_set:
-#         lost_set -= {int(i)-1}
-#     elif int(i)+1 in lost_set:
-#         lost_set -= {int(i)+1}
-# print(n - len(lost_set))
+start_time = time.time()     
 
-################################################################33
+print("í•™ìƒ ë²ˆí˜¸ ì •ë ¬")
+lost.sort()      # ì²´ìœ¡ë³µ ìƒì–´ë²„ë¦° í•™ìƒ ë²ˆí˜¸ ìˆœìœ¼ë¡œ ì •ë ¬
+reserve.sort()    # ì²´ìœ¡ë³µ ì—¬ìœ ë¶„ ìˆëŠ” í•™ìƒ ë²ˆí˜¸ ìˆœìœ¼ë¡œ ì •ë ¬
+print(lost, len(lost))
+print(reserve, len(reserve))
+print()
+
+lost2 = copy.deepcopy(lost)
+reserve2 = copy.deepcopy(reserve)
 
 
-survive = 0
-cloth_cnt = [1] * n
-print(cloth_cnt)
+# ì²´ìœ¡ë³µ ì—¬ìœ ë¶„ ê°€ì ¸ì˜¤ê¸°ë„ í•˜ê³  ìƒì–´ë²„ë¦¬ê¸°ë„ í•œ í•™ìƒ ì œì™¸ 
+print("ì¤‘ë³µ ì œê±°")
+for re_stu in reserve:
+    if re_stu in lost2:
+        lost2.remove(re_stu)
+print(lost2, len(lost2))
+for lo_stu in lost:
+    if lo_stu in reserve2:
+        reserve2.remove(lo_stu)
+print(reserve2, len(reserve2))
+print()
 
-for i in lost:
-    cloth_cnt[i-1] -= 1
-
-print(cloth_cnt)
-
-for j in reserve:
-    cloth_cnt[j-1] += 1
-    
-print(cloth_cnt)
-
-for i in lost:
-    if i in reserve:
-        survive += 1
-
-# ³ª¿¡°Ô ºô·ÁÁÙ ¼ö ÀÖ´Â »ç¶÷ÀÌ ¿ÀÁ÷ ÇÑ»ç¶÷ »ÓÀÎ »ç¶÷
-
-# Ã¹ ¹øÂ°¶û ¸¶Áö¸· ¹øÂ° ÇĞ»ı ¸ÕÀú Ã³¸® 
-if cloth_cnt[0] == 0 and cloth_cnt[1] == 2:
-    cloth_cnt[0] = 1
-    cloth_cnt[1] = 1
-    survive += 1
-    
-if cloth_cnt[n-1] == 0 and cloth_cnt[n-2] == 2:
-    cloth_cnt[n-1] = 1
-    cloth_cnt[n-2] = 1
-    survive += 1
-    
-print("Ã·°ú ³¡ ¸ÕÀú Ã³¸®")    
-print(cloth_cnt)
-    
-temp = survive    
-while True:    
-    # ¿©À¯ ¾ø´Â »ç¶÷ Ã³¸®
-    
-    for i in range(1, n-1):
-        if cloth_cnt[i] == 0:
-            if cloth_cnt[i-1] == 2 and cloth_cnt[i+1] == 2:
-                continue
-            elif cloth_cnt[i+1] == 2:
-                cloth_cnt[i] = 1
-                cloth_cnt[i+1] = 1
-                survive += 1
-            elif cloth_cnt[i-1] == 2:
-                cloth_cnt[i] = 1
-                cloth_cnt[i-1] = 1
-                survive += 1
-    if temp == survive:
-        break
-    else: 
-        temp = survive
-            
-print(cloth_cnt)         
-
-# ¿©À¯ ÀÖ´Â »ç¶÷ Ã³¸®
-for i in range(1, n-1):
-    if cloth_cnt[i] == 0:
-        if cloth_cnt[i-1] == 2 and cloth_cnt[i+1] == 2: 
-            survive += 1
-            # cloth_cnt[i] = 1
-            # cloth_cnt[i+1] = 1
-            
-
+for re2_stu in reserve2:
+    f = re2_stu - 1
+    b = re2_stu + 1
+    if f in lost2:
+        lost2.remove(f)
+    elif b in lost2:
+        lost2.remove(b)
         
-answer = n - len(lost) + survive 
-print(answer, " = ", n, " - ", k, " + ", survive )
+result = n - len(lost2)
+print(result)
 
+# time.sleep(1)
+end_time = time.time()
+time_duartion = end_time - start_time
+print("time_duartion: ", time_duartion)
