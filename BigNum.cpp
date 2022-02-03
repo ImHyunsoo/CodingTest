@@ -38,3 +38,43 @@ string solution(string name, int k) {
     
     return answer;
 }
+
+
+int main() {
+    random_device rd;
+
+    // random_device 를 통해 난수 생성 엔진을 초기화 한다.
+    mt19937 gen(rd());
+    // mt19937 gen(123);
+
+    // 0 부터 99 까지 균등하게 나타나는 난수열을 생성하기 위해 균등 분포 정의.
+    // uniform_int_distribution<int> dis(0, 99);
+    uniform_int_distribution<int> dis_num_len(1, 1000000);
+
+    int number_len = dis_num_len(gen);
+    // number_len = 999999;
+
+    uniform_int_distribution<int> dis_remove_len(1, number_len-1);   // 문자열 갯수
+    int k = dis_remove_len(gen);
+
+
+
+    uniform_int_distribution<int> dis_number(0, 9);
+    string name = "";
+    for (int i = 0; i < number_len; i++) {
+        name += dis_number(gen)  + '0';
+        // cout << name  << endl;
+        // this_thread::sleep_for (std::chrono::seconds(1));
+    }
+
+    auto start = std::chrono::steady_clock::now();
+
+    string result;
+    result = solution(name, k);
+
+    auto end = std::chrono::steady_clock::now();
+    std::chrono::duration<double> elapsed_seconds = end-start;
+    std::cout << "elapsed time: " << elapsed_seconds.count() << "s\n";
+
+    return 0;
+}
