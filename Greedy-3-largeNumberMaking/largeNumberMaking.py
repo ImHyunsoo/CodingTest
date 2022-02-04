@@ -1,5 +1,6 @@
  # -*- coding: utf-8 -*-
  # 큰 수 만들기
+import keyword
 import random
 import time
 
@@ -11,12 +12,8 @@ number = ""
 for i in range(num_cnt):
     number += str(random.randint(0, 9))   # 0 ~ 9 에서 랜덤하게 뽑힌 수를 문자열 형태로 덧 붙여줌
 
-# print("k: ", k)   
 start_time = time.time()     
-
-answer = ''
-# number = "4177252841"   # 테스트
-# 1924  2  94
+answer = ""
 
 # stack 을 이용한 큰 수 찾기
 stack = [number[0]]
@@ -26,7 +23,7 @@ for num in number[1:]:
         stack.pop()         # 뒤에 오는 숫자가 크면 스택에서 하나 뺌
     stack.append(num)       # 뒤에 오는 숫자가 작으면 스택에 하나 추가함
 if k != 0:
-    stack = stack[:-k]
+    stack = stack[:-k]      # 전체 문자열에서 k개 만큼 제외한 문자열
 answer = ''.join(stack)
 
 
