@@ -20,6 +20,7 @@ def solution(name):
     m = len(name) - 1
     for i in range(len(name)):
         if name[i] == 'A':
+            idx = i + 1
             while idx < len(name) and name[idx] == 'A':
                 idx += 1
             right = len(name) - idx
