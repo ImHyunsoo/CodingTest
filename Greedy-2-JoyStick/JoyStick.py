@@ -24,8 +24,8 @@ def solution(name):
                 idx += 1
             right = len(name) - idx
             left = 0 if i==0 else i-1
-            turn = right + left + min(left, right)
-            m = min(m, turn)
+            turn = right + left + min(left, right)     
+            m = min(m, turn)      # min(straight, return)
     answer += m
     print("answer: ", answer)
 
