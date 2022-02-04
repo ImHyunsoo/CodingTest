@@ -39,6 +39,8 @@ for lo_stu in lost:
 print(reserve2, len(reserve2))
 print()
 
+
+# 여유분 남아있는 학생은 자신의 앞 번호와 뒷 번호 학생이 체육복이 없으면 빌려줌 
 for re2_stu in reserve2:
     f = re2_stu - 1
     b = re2_stu + 1
@@ -47,6 +49,7 @@ for re2_stu in reserve2:
     elif b in lost2:
         lost2.remove(b)
         
+# 전체 학생 수에서 아직 체육복 없는 학생 수 빼기 
 result = n - len(lost2)
 print(result)
 
