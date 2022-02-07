@@ -2,6 +2,8 @@
   "files.associations": {
     "chrono": "cpp",
     "xstring": "cpp",
-    "ostream": "cpp"
+    "ostream": "cpp",
+    "random": "cpp",
+    "deque": "cpp"
   }
 }
