@@ -5,17 +5,17 @@ import random
 import time
 import math
 
+
 def solution(name):
     answer = 0
-    
+
     # 상하 알파벳 바꾸기 카운트
     for c in name:
         u = ord(c) - ord('A')
         d = ord('Z') - ord(c) + 1
         answer += min(u, d)
     print("answer: ", answer)
-    
-    
+
     # 커서 이동 카운트
     m = len(name) - 1
     for i in range(len(name)):
@@ -24,8 +24,8 @@ def solution(name):
             while idx < len(name) and name[idx] == 'A':
                 idx += 1
             right = len(name) - idx
-            left = 0 if i==0 else i-1
-            turn = right + left + min(left, right)     
+            left = 0 if i == 0 else i-1
+            turn = right + left + min(left, right)
             m = min(m, turn)      # min(straight, return)
     answer += m
     print("answer: ", answer)
@@ -39,7 +39,7 @@ for _ in range(n):
     name += chr(random.randint(65, 90))   # 대문자 알파벳 문자열에 추가하기
 print(name)
 
-start_time = time.time()     
+start_time = time.time()
 
 result = solution(name)
 
