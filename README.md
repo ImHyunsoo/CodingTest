@@ -97,8 +97,14 @@
 * [정수 삼각형4 python](/DP-2-intTriangle/intTriangle4.py) 
 
 #### 3. 등굣길
+* [등굣길1 python](/DP-3-wayToSchool/wayToSchool.py) / [등굣길1 C++](/DP-3-wayToSchool/wayToSchool.cpp)
+* [등굣길2 python](/DP-3-wayToSchool/wayToSchool2.py) 
 
 #### 4. 도둑질
+* [도둑질1 python](/DP-4-Stealing/stealing.py) / [도둑질1 C++](/DP-4-Stealing/stealing.cpp)
+* [도둑질2 python](/DP-4-Stealing/stealing2.py)
+* [도둑질3 python](/DP-4-Stealing/stealing3.py)
+* [도둑질4 python](/DP-4-Stealing/stealing4.py) 
 
 ### 그래프
  
