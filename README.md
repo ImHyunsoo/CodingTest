@@ -61,9 +61,23 @@
 
 
 ### 정렬
+#### 1. K번째 수
+* [K번째 수1 python](/Sort-1-KthNumber/KthNum.py) / [K번째 수1 C++](/Sort-1-KthNumber/KthNum.cpp)
+* [K번째 수2 python](/Sort-1-KthNumber/KthNum2.py) / [K번째 수2 C++](/Sort-1-KthNumber/KthNum2.cpp)
+
+#### 2. 가장 큰 수
+* [K번째 수1 python](/Sort-2-maxNum/maxNum.py) / [K번째 수1 C++](/Sort-2-maxNum/maxNum.cpp)
+
+#### 3. H-Index
+* [H-Index1 python](/Sort-3-Hindex/Hindex.py) / [H-Index1 C++](/Sort-3-Hindex/Hindex.cpp)
+* [H-Index2 python](/Sort-3-Hindex/Hindex2.py) / [H-Index2 C++](/Sort-3-Hindex/Hindex2.cpp)
+* [H-Index3 python](/Sort-3-Hindex/Hindex3.py) / [H-Index3 C++](/Sort-3-Hindex/Hindex3.cpp)
+* / [H-Index4 C++](/Sort-3-Hindex/Hindex4.cpp)
+* / [H-Index5 C++](/Sort-3-Hindex/Hindex5.cpp)
 
 
 ### 이분 탐색
+* [K번째 수1 python](/Sort-2-maxNum/maxNum.py) / [K번째 수1 C++](/Sort-2-maxNum/maxNum.cpp)
 
 
 ### 다이나믹 프로그래밍
