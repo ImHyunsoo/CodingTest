@@ -4,6 +4,9 @@
 
 ### 탐욕법(Greedy)()
 * [1. 체육복 python](/Greedy-1-WorkoutClothes/WorkoutClothes.py) / [체육복 C++](/Greedy-1-WorkoutClothes/WorkoutClothes.cpp)
+* [2. 조이스틱 python](/Greedy-1-WorkoutClothes/JoyStick.py) / [조이스틱 C++](/Greedy-1-WorkoutClothes/JoyStick.cpp)
+* [3. 큰 수 만들기 python](/Greedy-1-WorkoutClothes/largeNumberMaking.py) / [큰 수 만들기 C++](/Greedy-1-WorkoutClothes/largeNumberMaking.cpp)
+* [4. 구명보트 python](/Greedy-1-WorkoutClothes/lifeboat.py) / [구명보트 C++](/Greedy-1-WorkoutClothes/lifeboat.cpp)
 
 ### 깊이/너비 우선 탐색(DFS / BFS)
 
