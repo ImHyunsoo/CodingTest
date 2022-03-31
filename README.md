@@ -77,11 +77,28 @@
 
 
 ### 이분 탐색
-* [K번째 수1 python](/Sort-2-maxNum/maxNum.py) / [K번째 수1 C++](/Sort-2-maxNum/maxNum.cpp)
+#### 1. 입국심사
+* [입국심사1 python](/Searching-1-immigExam/immigExam.py) / [입국심사1 C++](/Searching-1-immigExam/immigExam.cpp)
+
+#### 2. 징검다리
+* [징검다리1 python](/Searching-2-stepStone/stepStone.py) / [징검다리1 C++](/Searching-2-stepStone/stepStone.cpp)
 
 
 ### 다이나믹 프로그래밍
+#### 1. N으로 표현
+* [N으로 표현1 python](/DP-1-expressN/expressN.py) / [N으로 표현1 C++](/DP-1-expressN/expressN.cpp)
+* [N으로 표현2 python](/DP-1-expressN/expressN2.py) / [N으로 표현2 C++](/DP-1-expressN/expressN2.cpp)
 
+
+#### 2. 정수 삼각형
+* [정수 삼각형1 python](/DP-2-intTriangle/intTriangle.py) / [정수 삼각형1 C++](/DP-2-intTriangle/intTriangle.cpp)
+* [정수 삼각형2 python](/DP-2-intTriangle/intTriangle2.py) 
+* [정수 삼각형3 python](/DP-2-intTriangle/intTriangle3.py)
+* [정수 삼각형4 python](/DP-2-intTriangle/intTriangle4.py) 
+
+#### 3. 등굣길
+
+#### 4. 도둑질
 
 ### 그래프
  
