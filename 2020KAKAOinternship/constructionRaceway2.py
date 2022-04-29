@@ -1,3 +1,4 @@
+# 방향에 따라 비용값이 달라지므로 방향별로 최소 비용 값을 업데이트함
 from collections import deque
 
 
@@ -47,42 +48,8 @@ def solution(board):
             if node_in_direction_cost[nx][ny][i] > min_cost:
                 node_in_direction_cost[nx][ny][i] = min_cost
                 queue.append((nx, ny))
-                for i in range(n):
-                    for j in range(n):
-                        print(
-                            f'{min(node_in_direction_cost[i][j]):>13}', end=' ')
-                    print()
-                print()
 
     # 가장 오른쪽 아래에서 최솟값을 리턴
     return min(node_in_direction_cost[n-1][n-1])
 
 
-# board = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
-# # result 900
-
-# board = [[0, 0, 0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 1, 0, 0, 0], [
-#     0, 0, 0, 1, 0, 0, 0, 1], [0, 0, 1, 0, 0, 0, 1, 0], [0, 1, 0, 0, 0, 1, 0, 0], [1, 0, 0, 0, 0, 0, 0, 0]]
-# # # result 3800
-
-# board = [[0, 0, 1, 0], [0, 0, 0, 0], [0, 1, 0, 1], [1, 0, 0, 0]]
-# # result 2100
-
-# board = [[0, 0, 0, 0, 0, 0], [0, 1, 1, 1, 1, 0], [0, 0, 1, 0, 0, 0],
-#          [1, 0, 0, 1, 0, 1], [0, 1, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0]]
-# # result 3200
-
-board = [[0, 0, 0, 0, 0, 0, 0, 0], [1, 0, 1, 1, 1, 1, 1, 0], [1, 0, 0, 1, 0, 0, 0, 0], [1, 1, 0, 0, 0, 1, 1, 1], [
-    1, 1, 1, 1, 0, 0, 0, 0], [1, 1, 1, 1, 1, 1, 1, 0], [1, 1, 1, 1, 1, 1, 1, 0], [1, 1, 1, 1, 1, 1, 1, 0]]
-# result 4500
-
-result = solution(board)
-print(result)
-
-
-# https://unho94.tistory.com/m/130
-# https://ckd2806.tistory.com/entry/%ED%8C%8C%EC%9D%B4%EC%8D%AC-python-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EA%B2%BD%EC%A3%BC%EB%A1%9C-%EA%B1%B4%EC%84%A4
-# https://ojt90902.tistory.com/537
-# https://programmers.co.kr/questions/21325
-# https://programmers.co.kr/questions/17381
-# https://programmers.co.kr/questions/11840
