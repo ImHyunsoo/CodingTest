@@ -45,3 +45,11 @@
  3. 과정 1~2를 반복하며 더 이상 방문할 노드가 없다면 목표노드의 비용을 반환합니다. 
 
 * [개선한 두 번째 풀이](constructionRaceway2.py)
+
+## 참고
+https://unho94.tistory.com/m/130
+https://ckd2806.tistory.com/entry/%ED%8C%8C%EC%9D%B4%EC%8D%AC-python-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EA%B2%BD%EC%A3%BC%EB%A1%9C-%EA%B1%B4%EC%84%A4
+https://ojt90902.tistory.com/537
+https://programmers.co.kr/questions/21325
+https://programmers.co.kr/questions/17381
+https://programmers.co.kr/questions/11840
