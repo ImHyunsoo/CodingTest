@@ -126,7 +126,6 @@
 
 ### 2020 카카오 블라인드 인턴쉽
 #### 1. 경주로 건설
-* [경주로 건설1 python](/2020/KAKAOinternship/constructionRaceway1.py)
-* [경주로 건설2 python](/2020/KAKAOinternship/constructionRaceway2.py)
-
+* [경주로 건설1 python](/2020KAKAOinternship/constructionRaceway1.py)
+* [경주로 건설2 python](/2020KAKAOinternship/constructionRaceway2.py)
 
