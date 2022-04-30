@@ -1,3 +1,9 @@
+'''
+투 포인터
+lines의 양끝점들을 오름차순으로 정렬 - 이를 기반으로 start와 end 포인터를 움직일거임
+line의 양끝점은 [시간, 'e' or 's']와 같은 형태로 리스트에 추가
+'''
+
 def convert_ms(lines):
     end_points_list = []
 
@@ -22,9 +28,6 @@ def convert_ms(lines):
 
 
 def solution(lines):
-    # 투 포인터
-    # lines의 양끝점들을 오름차순으로 정렬 - 이를 기반으로 start를 움직일거임
-    # line의 양끝점[시간, 'e or s']을 리스트에 추가
 
     end_points_list = convert_ms(lines)
     end_points_list.sort(key=lambda x: x[0])
