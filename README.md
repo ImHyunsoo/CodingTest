@@ -126,13 +126,13 @@
 
 ### 2020 카카오 블라인드 인턴쉽
 #### 1. 경주로 건설
-* [문제 풀이 README.md](/2020KAKAOinternship/README.md)
+##### [문제 풀이 README.md](/2020KAKAOinternship/README.md)
 * [경주로 건설1 python](/2020KAKAOinternship/constructionRaceway1.py)
 * [경주로 건설2 python](/2020KAKAOinternship/constructionRaceway2.py)
 
 ### 2018 카카오 블라인드 채용 1차 
 #### 1. 추석트래픽
-* [문제 풀이 README.md](/2018KAKAKO_BLIND/README.md)
+##### [문제 풀이 README.md](/2018KAKAKO_BLIND/README.md)
 * [나의 풀이](/2018KAKAKO_BLIND/chuseok_traffic1.py.py)
 * [다른 사람 풀이1](/2018KAKAKO_BLIND/chuseok_traffic2.py)
 * [다른 사람 풀이2](/2018KAKAKO_BLIND/chuseok_traffic3.py)
