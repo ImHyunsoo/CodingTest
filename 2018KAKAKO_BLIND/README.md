@@ -14,9 +14,9 @@
  2. start와 end 포인터는 0부터 시작하며 end 포인터가 범위를 넘어서지 않고 투 포인터의 시간차이가 1000ms 미만인 경우, end포인터를 1 증가시키고 그렇지 않은 경우 start포인터를 1 증가시킨다. 이때 end 포인터가 시작을 가리켰다면 카운터를 1 증가시키고 start 포인터가 끝을 가리켰다면 카운터를 1 감소시킨다.
  3. 투 포인터가 각 로그를 모두 이동할 때까지 과정 2를 반복하며 반복이 끝나면 카운트의 최댓값을 반환한다.
 
-* [풀이](constructionRaceway2.py)
-* [다른 사람 풀이1]
-* [다른 사람 풀이2]
+* [나의 풀이](chuseok_traffic1.py.py)
+* [다른 사람 풀이1](chuseok_traffic2.py)
+* [다른 사람 풀이2](chuseok_traffic3.py)
 
 ## 참고
 https://tech.kakao.com/2017/09/27/kakao-blind-recruitment-round-1/
